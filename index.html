@@ -119,7 +119,6 @@
   </style>
 </head>
 
-  
 <body>
 
   <section class="hero">
@@ -137,7 +136,8 @@
 
             <div class="column has-text-centered">
               <div class="publication-links">
-               <!-- PDF Link (Paper) -->
+
+                <!-- PDF Link (Paper) -->
                 <span class="link-block">
                   <a href="https://arxiv.org/abs/2408.10202" 
                      target="_blank" 
@@ -198,92 +198,9 @@
       <div class="columns is-centered">
         <div class="column is-8">
           <!-- saner_fig.png を画像として埋め込み -->
-          <img src="./static/images/saner_fig.png" alt="SANER Figure" style="width:100%; height:auto;">
+          <img src="./static/images/new_figure_horizon.png" alt="SANER Figure" style="width:100%; height:auto;">
           <h2 class="subtitle has-text-centered">
             Our debiasing method, SANER, overcomes the limitations in existing methods: (a) attribute information is retained after debiasing, and (b) protected attribute annotations are not required for debiasing.
-          </h2>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="hero teaser">
-    <div class="hero-body">
-      <div class="columns is-centered">
-        <div class="column is-8">
-          <h2 class="title is-2 has-text-centered">Abstract</h2>
-          <div class="content has-text-justified">
-            <p>Large-scale vision-language models, such as CLIP, are known to contain societal bias regarding protected attributes (e.g., gender, age). This paper aims to address the problems of societal bias in CLIP. Although previous studies have proposed to debias societal bias through adversarial learning or test-time projecting, our comprehensive study of these works identifies two critical limitations: 1) loss of attribute information when it is explicitly disclosed in the input and 2) use of the attribute annotations during debiasing process. To mitigate societal bias in CLIP and overcome these limitations simultaneously, we introduce a simple-yet-effective debiasing method called SANER (societal attribute neutralizer) that eliminates attribute information from CLIP text features only of attribute-neutral descriptions. Experimental results show that SANER, which does not require attribute annotations and preserves original information for attribute-specific descriptions, demonstrates superior debiasing ability than the existing methods. Additionally, we observe that SANER does not require retraining CLIP from scratch with the original dataset. Moreover, the debiased model can be directly applied to the text-to-image generation model by simply replacing the text encoder.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="hero teaser" id="BibTeX">
-    <div class="hero-body">
-      <div class="columns is-centered">
-        <div class="column is-8">
-          <h2 class="title is-2 has-text-centered">BibTeX</h2>
-          <pre class="command-copy"><code>@article{hirota2024saner,
-  title={SANER: Annotation-free Societal Attribute Neutralizer for Debiasing CLIP},
-  author={Hirota, Yusuke and Chen, Min-Hung and Wang, Chien-Yi and Nakashima, Yuta and Wang, Yu-Chiang Frank and Hachiuma, Ryo},
-  journal={arXiv},
-  year={2024}
-}</code></pre>
-        </div>
-      </div>
-    </div>
-  </section>
-
-</body>
-
-</html>
-これにより、Paperアイコン・arXivアイコンのクリックで https://arxiv.org/abs/2408.10202 に飛ぶようになります。
-
-
-
-
-
-
-
-
-                <!-- Video Link. -->
-                <span class="link-block">
-                  <a href="https://www.youtube.com/"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                    </span>
-                    <span>Video</span>
-                  </a>
-                </span>
-                <!-- Code Link. -->
-                <span class="link-block">
-                  <a href="https://github.com/" class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="hero teaser">
-    <div class="hero-body">
-      <div class="columns is-centered">
-        <div class="column is-8">
-          <!-- saner_fig.png を画像として埋め込み -->
-          <img src="./static/images/saner_fig.png" alt="SANER Figure" style="width:100%; height:auto;">
-          <h2 class="subtitle has-text-centered">
-            Our debiasing method, SANER, overcomes the limitations in existing methods: (a) attribute information is retained after debiasing, and (b) protected attribute annotations are not required for debiasing. 
           </h2>
         </div>
       </div>
